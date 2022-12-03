@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Отзыв</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -35,7 +37,9 @@
       <section class="intro">
         <h1 class="visually-hidden">Написать отзыв</h1>
         <div class="intro__wrapper">
-          <img class="intro__slogan" src="#" width="229" height="39" alt="Седона">
+          <div class="intro__slogan-wrapper">
+            <img class="intro__slogan" src="#" width="229" height="39" alt="Седона">
+          </div>
           <div class="intro__text-block text-block">
             <div class="text-block__title">Оставьте свой отзыв</div>
             <div class="text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
@@ -62,13 +66,13 @@
 
         <fieldset class="field-group">
           <legend class="field-group__legend">Контактная информация:</legend>
-          <label class="form__label label--has-icon label--phone">
+          <label class="form__label">
             Контактный телефон*:
-            <input class="form__input" type="text" placeholder="Введите телефон" required>
+            <input class="form__input form__input--has-icon form__input--phone" type="text" placeholder="Введите телефон" required>
           </label>
-          <label class="form__label label--has-icon label--mail">
+          <label class="form__label">
             Электронная почта*:
-            <input class="form__input" type="text" placeholder="Введите e-mail" required>
+            <input class="form__input form__input--has-icon form__input--mail" type="text" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
 
@@ -100,7 +104,7 @@
 
         </fieldset>
         <fieldset class="field-group">
-          <legend class="field-group__legend">Посещенные достопримечательности:</legend>
+          <legend class="field-group__legend">Посещенные <br>достопримечательности:</legend>
           <ul class="form__list form-list">
             <li class="form-list__item">
               <label class="form-list__control control">
