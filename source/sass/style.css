@@ -1,0 +1,117 @@
+body {
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantage {
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.advantage--primary {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantage--has-icon {
+  background-color: #ffffff;
+}
+
+.advantage__title {
+  color: #000000;
+}
+
+.advantage__title--primary {
+  color: #ffffff;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.control__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.copyright__text {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.field-group__legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.form__legend {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.intro__slogan-wrapper {
+  background-color: #add8e6;
+  background-image: url("../../img/intro-background.jpg");
+}
+
+.likes__count {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-footer__slogan {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.photo-card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.text-block {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-block__title {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
