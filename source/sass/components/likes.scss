@@ -1,5 +1,7 @@
+@use "../global/bootstrap.scss";
+
 .likes__count {
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: bootstrap.$accent-text;
 }

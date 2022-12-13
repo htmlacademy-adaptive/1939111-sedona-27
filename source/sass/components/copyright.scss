@@ -1,4 +1,6 @@
+@use "../global/bootstrap.scss";
+
 .copyright__text {
-  color: #000000;
+  color: bootstrap.$accent-text;
   text-transform: uppercase;
 }

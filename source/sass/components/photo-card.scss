@@ -1,5 +1,7 @@
+@use "../global/bootstrap.scss";
+
 .photo-card__title {
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: bootstrap.$accent-text;
 }

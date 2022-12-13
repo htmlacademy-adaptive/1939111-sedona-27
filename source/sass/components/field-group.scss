@@ -1,8 +1,10 @@
+@use "../global/bootstrap.scss";
+
 .field-group__legend {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: bootstrap.$accent-text;
 }

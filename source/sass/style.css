@@ -51,7 +51,7 @@
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.6;
 }
 
 .form__input {
@@ -77,39 +77,13 @@
   color: #000000;
 }
 
-.main-header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.main-header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.main-nav__toggle {
-  display: none;
-}
-
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-@media (min-width: 767px) {
-  .main-nav__toggle {
-    display: block;
-  }
-}
 @media (min-width: 768px) {
-  .main-nav__list {
-    flex-direction: row;
+  .main-nav__toggle {
+    display: none;
   }
 }
 .page__body {
+  margin: 0;
   background-color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -124,6 +98,74 @@
   color: #000000;
 }
 
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__item {
+  width: 100%;
+  text-align: center;
+}
+
+.site-list__item:not(.site-list__item--logo) {
+  padding-top: 18px;
+  padding-bottom: 17px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.site-list__item--logo {
+  position: relative;
+  order: -1;
+}
+
+.site-list__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 185px;
+  height: 96px;
+}
+
+.site-list__link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+  }
+  .site-list__item {
+    width: 153px;
+  }
+  .site-list__item:not(.site-list__item--logo) {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .site-list__item--logo {
+    order: 0;
+  }
+  .site-list__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+@media (min-width: 1200px) {
+  .site-list__item {
+    width: 240px;
+  }
+}
 .text-block {
   text-align: center;
   text-transform: uppercase;
