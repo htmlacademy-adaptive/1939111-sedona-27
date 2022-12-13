@@ -1,6 +1,12 @@
+@use "../global/bootstrap.scss";
+
 .form__legend {
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+}
+
+.form__input {
+  background-color: bootstrap.$bg-color;
 }
