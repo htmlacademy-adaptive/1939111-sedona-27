@@ -1,0 +1,23 @@
+@use "../global/bootstrap.scss";
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+@media (min-width: bootstrap.$mobile-width-only) {
+  .main-nav__toggle {
+    display: block;
+  }
+}
+
+@media (min-width: bootstrap.$tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+}

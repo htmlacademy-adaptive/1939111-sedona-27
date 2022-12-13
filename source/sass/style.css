@@ -77,6 +77,38 @@
   color: #000000;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+@media (min-width: 767px) {
+  .main-nav__toggle {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+}
 .page__body {
   background-color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
