@@ -11,10 +11,11 @@
 }
 
 .advantage--has-icon {
-  background-color: bootstrap.$page-color;
+  background-color: bootstrap.$bg-color;
 }
 
 .advantage__title {
+  margin: 0;
   color: bootstrap.$accent-text;
 }
 

@@ -3,6 +3,20 @@
 .text-block {
   text-align: center;
   text-transform: uppercase;
+  background-color: bootstrap.$bg-color;
+  padding-right: 18px;
+  padding-left: 18px;
+
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
 }
 
 .text-block__title {

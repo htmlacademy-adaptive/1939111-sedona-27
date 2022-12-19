@@ -1,7 +1,18 @@
 @use "../global/bootstrap.scss";
 
-@media (min-width: bootstrap.$tablet-width) {
-  .main-nav__toggle {
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+  min-height: 56px;;
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  @media (min-width: bootstrap.$tablet-width) {
     display: none;
   }
 }
+

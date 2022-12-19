@@ -4,9 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: bootstrap.$bg-color;
 }
 
 .site-list__item {
@@ -53,7 +55,7 @@
   }
 
   .site-list__item:not(.site-list__item--logo) {
-    background-color: bootstrap.$page-color;
+    background-color: bootstrap.$bg-color;
     color: bootstrap.$accent-text;
   }
 
