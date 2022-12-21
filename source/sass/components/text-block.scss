@@ -25,4 +25,9 @@
   font-weight: 700;
   line-height: 26px;
   color: bootstrap.$accent-text;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

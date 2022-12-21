@@ -1,0 +1,6 @@
+@use "../global/bootstrap.scss";
+
+.main-header {
+  min-height: 56px;
+  background-color: bootstrap.$bg-color;
+}
