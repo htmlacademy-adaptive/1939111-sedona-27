@@ -1,31 +1,43 @@
 @use "../global/bootstrap.scss";
 
 .site-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   margin: 0;
   padding: 0;
   list-style-type: none;
   background-color: bootstrap.$bg-color;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-template-columns: repeat(5,  1fr);
+  }
 }
 
 .site-list__item {
   width: 100%;
   text-align: center;
-}
 
-.site-list__item:not(.site-list__item--logo) {
-  padding-top: 18px;
-  padding-bottom: 17px;
-  background-color: bootstrap.$primary-color;
-  color: bootstrap.$primary-text;
-}
+  &:not(.site-list__item--logo) {
+    display: none;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    background-color: bootstrap.$primary-color;
+    color: bootstrap.$primary-text;
 
-.site-list__item--logo {
-  position: relative;
-  order: -1;
+    @media (min-width: bootstrap.$tablet-width) {
+      display: block;
+      background-color: bootstrap.$bg-color;
+      color: bootstrap.$accent-text;
+    }
+  }
+
+  &--logo {
+    position: relative;
+    order: -1;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      order: 0;
+    }
+  }  
 }
 
 .site-list__logo {
@@ -43,35 +55,10 @@
   color: bootstrap.$primary-text;
   text-decoration: none;
   text-transform: uppercase;
-}
 
-@media (min-width: bootstrap.$tablet-width) {
-  .site-list {
-    flex-direction: row;
-  }
-
-  .site-list__item {
-    width: 153px;
-  }
-
-  .site-list__item:not(.site-list__item--logo) {
-    background-color: bootstrap.$bg-color;
-    color: bootstrap.$accent-text;
-  }
-
-  .site-list__item--logo {
-    order: 0;
-  }
-
-  .site-list__link {
+  @media (min-width: bootstrap.$tablet-width) {
     font-size: 14px;
     line-height: 21px;
     color: bootstrap.$accent-text;
-  }
-}
-
-@media (min-width: bootstrap.$desktop-width) {
-  .site-list__item {
-    width: 240px;
   }
 }
