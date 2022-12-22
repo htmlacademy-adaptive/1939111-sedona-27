@@ -1,24 +1,70 @@
 @use "../global/bootstrap.scss";
 
 .advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 12px;
+  box-sizing: border-box;
   background-color: bootstrap.$secondary-color;
   text-transform: uppercase;
-}
 
-.advantage--primary {
-  background-color: bootstrap.$primary-color;
-  color: bootstrap.$primary-text;
-}
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 52px 33px;
+  }
 
-.advantage--has-icon {
-  background-color: bootstrap.$bg-color;
+  &--primary {
+    padding: 37px 12px;
+    background-color: bootstrap.$primary-color;
+    color: bootstrap.$primary-text;
+  }
+
+  &--has-icon {
+    padding: 8px 12px 0 65px;
+    text-align: left;
+    background: none;
+
+    @media (max-width: bootstrap.$mobile-width-only) {
+      &-first {
+        margin-top: 23px;
+      }
+
+      &-last {
+        margin-bottom: 46px;
+      }
+
+      &:not(.advantage--has-icon-last) {
+        margin-bottom: 25px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 156px 32px 61px;
+      text-align: center;
+    }
+  }
 }
 
 .advantage__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 11px;
   color: bootstrap.$accent-text;
+
+  &--primary {
+    color: bootstrap.$primary-text;
+  }
+
+  &--has-icon {
+    margin-bottom: 16px;
+  }
 }
 
-.advantage__title--primary {
-  color: bootstrap.$primary-text;
+.advantage__number {
+  margin-bottom: 17px;
 }
+

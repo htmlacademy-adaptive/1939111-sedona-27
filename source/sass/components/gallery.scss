@@ -25,3 +25,11 @@
     grid-column: 1 / 4;
   }
 }
+
+.gallery__item img {
+  height: 280px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    height: 267px;
+  }
+}

@@ -102,11 +102,11 @@
 
   @media (max-width: bootstrap.$mobile-width-only) {
     &:hover {
-      background-color: #669ec0;
+      background-color: bootstrap.$primary-hover;
     }
 
     &:active {
-      background-color: #5496bd;
+      background-color: bootstrap.$primary-active;
       color: rgba(255, 255, 255, 0.3);
     }
   }
