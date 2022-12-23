@@ -1,4 +1,12 @@
+@use "../global/bootstrap.scss";
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
-  color: #000000;
+  margin-right: 12px;
+  color: bootstrap.$accent-text;
   text-transform: uppercase;
 }

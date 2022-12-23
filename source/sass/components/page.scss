@@ -1,0 +1,23 @@
+@use "../global/bootstrap.scss";
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: bootstrap.$page-color;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: bootstrap.$secondary-text;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    max-width: 1200px;
+    box-shadow: -15px 0 15px -15px #00000033, 15px 0 15px -15px #00000033
+  }
+}

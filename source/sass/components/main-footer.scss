@@ -1,7 +1,27 @@
+@use "../global/bootstrap.scss";
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 82px;
+  align-items: center;
+  background-color: bootstrap.$bg-color;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 76px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 0 136px;
+  }
+}
+
 .main-footer__slogan {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: bootstrap.$accent-text;
 }

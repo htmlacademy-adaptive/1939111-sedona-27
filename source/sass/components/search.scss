@@ -1,0 +1,18 @@
+@use "../global/bootstrap.scss";
+
+.search {
+  text-align: center;
+  background-color: bootstrap.$bg-color;
+}
+
+.search__button {
+  padding: 0 18px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+      padding: 0 33px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+      padding: 0 55px;
+  }
+}

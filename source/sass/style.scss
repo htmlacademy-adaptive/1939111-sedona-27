@@ -1,5 +1,5 @@
 // Файл с часто используемыми элементами
-@use "./global/bootstrap.scss";
+@use "global/bootstrap.scss";
 
 // Блоки
 @use "./components/advantage.scss";
@@ -8,7 +8,6 @@
 @use "./components/button.scss";
 @use "./components/control.scss";
 @use "./components/copyright.scss";
-@use "./components/feedback-form.scss";
 @use "./components/field-group.scss";
 @use "./components/form.scss";
 @use "./components/form-list.scss";
@@ -23,7 +22,6 @@
 @use "./components/page.scss";
 @use "./components/photo-card.scss";
 @use "./components/search.scss";
-@use "./components/site-list.scss";
 @use "./components/social.scss";
 @use "./components/text-block.scss";
 @use "./components/video.scss";

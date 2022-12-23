@@ -1,0 +1,35 @@
+@use "../global/bootstrap.scss";
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery__item--first-photo {
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 1 / 4;
+  }
+}
+
+.gallery__item img {
+  height: 280px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    height: 267px;
+  }
+}
