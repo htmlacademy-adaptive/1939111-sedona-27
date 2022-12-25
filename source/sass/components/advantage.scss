@@ -14,13 +14,14 @@
   }
 
   &--primary {
-    padding: 37px 12px;
+    padding-top: 37px;
+    padding-bottom: 37px;
     background-color: bootstrap.$primary-color;
     color: bootstrap.$primary-text;
   }
 
   &--has-icon {
-    padding: 8px 12px 0 65px;
+    padding: 8px 18px 0 65px;
     background: none;
 
     @media (max-width: bootstrap.$mobile-width-only) {

@@ -3,18 +3,19 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding: 0 82px;
+  padding: 28.5px 18px 22px 18px;
   align-items: center;
   background-color: bootstrap.$bg-color;
 
   @media (min-width: bootstrap.$tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 76px;
+    padding: 36px 60px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 0 136px;
+    padding-left: 136px;
+    padding-right: 136px;
   }
 }
 

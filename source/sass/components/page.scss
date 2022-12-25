@@ -1,5 +1,19 @@
 @use "../global/bootstrap.scss";
 
+@font-face {
+  font-family: "PT Sans";
+  src: url("../../fonts/ptsans.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../../fonts/ptsansbold.woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
 .page {
   height: 100%;
 }

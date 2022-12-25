@@ -3,19 +3,6 @@
 .text-block {
   text-align: center;
   text-transform: uppercase;
-  padding-right: 12px;
-  padding-left: 12px;
-
-
-  @media (min-width: bootstrap.$tablet-width) {
-    padding-right: 33px;
-    padding-left: 33px;
-  }
-
-  @media (min-width: bootstrap.$desktop-width) {
-    padding-right: 55px;
-    padding-left: 55px;
-  }
 }
 
 .text-block__title {

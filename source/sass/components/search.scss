@@ -1,6 +1,10 @@
 @use "../global/bootstrap.scss";
 
 .search {
+  max-width: 458px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
   text-align: center;
 }
 
@@ -19,14 +23,19 @@
 }
 
 .search__button {
-  padding: 0 18px;
+  display: block;
+  width: 100%;
   margin-bottom: 49px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @media (min-width: bootstrap.$tablet-width) {
-      padding: 0 33px;
+    margin-bottom: 58px;
+    padding-top: 14.5px;
+    padding-bottom: 17.5px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-      padding: 0 55px;
+    margin-bottom: 66px;
   }
 }
