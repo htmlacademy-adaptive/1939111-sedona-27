@@ -19,6 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: grid;
   min-width: 100%;
   margin: 0;
@@ -33,13 +34,12 @@
 
 .main-nav__item {
   @media (max-width: bootstrap.$mobile-width-only) {
-    &:not(:last-child) {
-      margin-bottom: 1px;
-    }
+    margin-bottom: 1px;
 
     &:last-child {
       position: relative;
       border-bottom: none;
+      margin-bottom: 0;
     }
 
     &:last-child::after {
@@ -61,7 +61,6 @@
 }
 
 .main-nav__logo {
-  background-color: bootstrap.$bg-color;
   position: relative;
   order: -1;
 
@@ -117,7 +116,7 @@
     font-size: 14px;
     line-height: 21px;
     color: bootstrap.$accent-text;
-    background-color: bootstrap.$bg-color;
+    background: none;
 
     &:hover {
       color: bootstrap.$primary-color;
@@ -140,7 +139,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   display: block;
   width: 56px;
   height: 56px;

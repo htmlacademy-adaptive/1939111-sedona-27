@@ -3,11 +3,11 @@
 .field-group {
   margin: 0;
   padding: 0;
-}
 
-.field-group--wide {
-  @media (min-width: bootstrap.$tablet-width) {
-    grid-column: 1 / 3;
+  &--wide {
+    @media (min-width: bootstrap.$tablet-width) {
+      grid-column: 1 / 3;
+    }
   }
 }
 

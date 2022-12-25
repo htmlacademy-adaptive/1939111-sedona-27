@@ -1,0 +1,13 @@
+@use "../global/bootstrap.scss";
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: bootstrap.$primary-color;
+  color: bootstrap.$primary-text;
+  cursor: pointer;
+}

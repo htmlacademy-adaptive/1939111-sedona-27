@@ -5,8 +5,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 24px 12px;
-  box-sizing: border-box;
+  padding: 24px 18px 25px 18px;
   background-color: bootstrap.$secondary-color;
   text-transform: uppercase;
 
@@ -22,20 +21,21 @@
 
   &--has-icon {
     padding: 8px 12px 0 65px;
-    text-align: left;
     background: none;
 
     @media (max-width: bootstrap.$mobile-width-only) {
-      &-first {
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      &:first-child {
         margin-top: 23px;
       }
 
-      &-last {
+      &:last-child {
         margin-bottom: 46px;
-      }
-
-      &:not(.advantage--has-icon-last) {
-        margin-bottom: 25px;
       }
 
       br {
@@ -45,7 +45,22 @@
 
     @media (min-width: bootstrap.$tablet-width) {
       padding: 156px 32px 61px;
-      text-align: center;
+    }
+  }
+
+  &--secondary {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      position: relative;
+
+      &:not(:last-child)::after {
+        position: absolute;
+        bottom: 0;
+        left: 18px;
+        content: "";
+        width: calc(100% - 36px);
+        height: 1px;
+        background-color: #d6d6d6;
+      }
     }
   }
 }

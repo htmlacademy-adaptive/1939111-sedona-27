@@ -16,7 +16,7 @@
   }
 }
 
-.gallery__item--first-photo {
+.gallery__item:first-child {
   @media (min-width: bootstrap.$tablet-width) {
     grid-column: 1 / 3;
   }
