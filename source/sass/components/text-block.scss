@@ -8,12 +8,18 @@
 .text-block__title {
   margin-bottom: 35px;
   font-size: 18px;
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
   color: bootstrap.$accent-text;
 
   @media (min-width: bootstrap.$tablet-width) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 30px;
+  }
+
+  &--index {
+    @media (min-width: bootstrap.$tablet-width) {
+      font-size: 21px;
+    }
   }
 }
+
