@@ -1,0 +1,44 @@
+@use "../global/bootstrap.scss";
+
+.form-list {
+  @include bootstrap.list-reset;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    padding-left: 44.5px;
+    padding-right: 44.5px;
+  }
+
+  &--impression {
+    @media (min-width: bootstrap.$tablet-width) {
+      grid-column-gap: 16px;
+      max-width: 575px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100%;
+      padding-left: 53px;
+      padding-right: 53px;
+    }
+  }
+}
+
+.form-list__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

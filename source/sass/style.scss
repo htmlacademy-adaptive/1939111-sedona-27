@@ -1,6 +1,9 @@
 // Файл с часто используемыми элементами
 @use "global/bootstrap.scss";
 
+//Базовые блоки
+@use "./components/visually-hidden.scss";
+
 // Блоки
 @use "./components/advantage.scss";
 @use "./components/advantages.scss";
@@ -25,4 +28,3 @@
 @use "./components/text-block.scss";
 @use "./components/video.scss";
 @use "./components/video-gallery.scss";
-@use "./components/visually-hidden.scss";

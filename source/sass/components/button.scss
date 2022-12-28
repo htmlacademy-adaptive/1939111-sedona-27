@@ -10,4 +10,14 @@
   background-color: bootstrap.$primary-color;
   color: bootstrap.$primary-text;
   cursor: pointer;
+
+  &:hover {
+    background-color: bootstrap.$primary-hover;
+  }
+
+  &:active {
+    background-color: bootstrap.$primary-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
+

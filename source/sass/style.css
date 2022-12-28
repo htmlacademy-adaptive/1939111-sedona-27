@@ -82,6 +82,7 @@
     display: none;
   }
 }
+
 .page__body {
   margin: 0;
   background-color: #ffffff;
@@ -145,27 +146,33 @@
   .site-list {
     flex-direction: row;
   }
+
   .site-list__item {
     width: 153px;
   }
+
   .site-list__item:not(.site-list__item--logo) {
     background-color: #ffffff;
     color: #000000;
   }
+
   .site-list__item--logo {
     order: 0;
   }
+
   .site-list__link {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
   }
 }
+
 @media (min-width: 1200px) {
   .site-list__item {
     width: 240px;
   }
 }
+
 .text-block {
   text-align: center;
   text-transform: uppercase;

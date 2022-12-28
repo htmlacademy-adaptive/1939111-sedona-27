@@ -2,10 +2,21 @@
 
 .form {
   display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: bootstrap.$bg-color;
 
   @media (min-width: bootstrap.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 88px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column-gap: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -16,4 +27,100 @@
   line-height: 21px;
   text-transform: uppercase;
   opacity: 0.6;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.form__input-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--phone::before {
+    background-image: url("../../img/icons/phone.svg");
+  }
+
+  &--mail::before {
+    background-image: url("../../img/icons/mail.svg");
+  }
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:placeholder-shown {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--has-icon {
+    padding-right: 74px;
+  }
+
+  &--textarea {
+    height: 150px;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    resize: none;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      height: 160px;
+    }
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+    background-color: #ffffff;
+  }
+}
+
+.form__button-wrapper {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.form__legend {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
