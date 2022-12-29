@@ -18,6 +18,9 @@
 }
 
 .form__legend {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   margin: 0;
   text-align: right;
   font-size: 12px;
@@ -112,10 +115,4 @@
 .form__button {
   width: 100%;
   padding: 16px;
-}
-
-.form__legend {
-  display: flex;
-  justify-content: end;
-  align-items: center;
 }

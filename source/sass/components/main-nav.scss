@@ -2,68 +2,68 @@
 
 .main-nav {
   position: relative;
+}
 
-  &--nojs {
-    .main-nav__toggle,
-    .main-nav__logo {
-      @media (max-width: bootstrap.$mobile-width-only) {
-        display: none;
-      }
-    }
-
-    .main-nav__list {
-      position: static;
+.main-nav--nojs {
+  .main-nav__toggle,
+  .main-nav__logo {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      display: none;
     }
   }
 
-  &--opened {
-    .main-nav__logo {
-      @media (max-width: bootstrap.$mobile-width-only) {
-        display: none;
-      }
-    }
+  .main-nav__list {
+    position: static;
+  }
+}
 
-    .main-nav__toggle {
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 25px;
-        left: 16px;
-        width: 27px;
-        height: 4px;
-        background-color: bootstrap.$primary-text;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
+.main-nav--opened {
+  .main-nav__logo {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      display: none;
     }
   }
 
-  &--closed {
-    .main-nav__item {
-      @media (max-width: bootstrap.$mobile-width-only) {
-        display: none;
-      }
+  .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 16px;
+      width: 27px;
+      height: 4px;
+      background-color: bootstrap.$primary-text;
     }
 
-    .main-nav__toggle {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        width: 23px;
-        height: 4px;
-        background-color: bootstrap.$primary-color;
-        box-shadow: 0 9px 0 0 bootstrap.$primary-color,
-          0 18px 0 0 bootstrap.$primary-color;
-      }
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main-nav--closed {
+  .main-nav__item {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 23px;
+      height: 4px;
+      background-color: bootstrap.$primary-color;
+      box-shadow: 0 9px 0 0 bootstrap.$primary-color,
+        0 18px 0 0 bootstrap.$primary-color;
     }
   }
 }
@@ -79,7 +79,7 @@
 
   @media (min-width: bootstrap.$tablet-width) {
     position: relative;
-    grid-template-columns: repeat(5,  1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
