@@ -4,8 +4,6 @@
   position: relative;
 
   @media (max-width: bootstrap.$mobile-width-only) {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-top: 1px solid #e5e5e5;
 
     &:last-child {
@@ -30,7 +28,7 @@
     grid-template-columns: 1fr 20%;
     grid-column-gap: 15px;
     box-sizing: border-box;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 15px;
     background-color: #f2f2f2;
 
     &--accent {
@@ -43,16 +41,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 22px 25px 15px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .photo-card:first-child .photo-card__description {
   @media (min-width: bootstrap.$desktop-width) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 22px 20px 15px;
   }
 }
 

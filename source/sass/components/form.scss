@@ -2,21 +2,18 @@
 
 .form {
   display: grid;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   background-color: bootstrap.$bg-color;
 
   @media (min-width: bootstrap.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 88px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
     grid-column-gap: 128px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 0 120px;
   }
 }
 
@@ -82,8 +79,7 @@
   &--textarea {
     height: 150px;
     max-width: 768px;
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 auto 32px auto;
     resize: none;
 
     @media (min-width: bootstrap.$tablet-width) {
@@ -115,8 +111,7 @@
 
 .form__button {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 
 .form__legend {

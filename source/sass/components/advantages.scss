@@ -4,6 +4,10 @@
   display: grid;
   position: relative;
 
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -20,10 +24,6 @@
       display: none;
     }
   }
-
-  @media (min-width: bootstrap.$tablet-width) {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .advantages__item {
@@ -34,8 +34,7 @@
   }
 }
 
-.advantages__tips,
-.advantages__secondary {
+.advantages__list {
   @include bootstrap.list-reset;
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -49,13 +48,12 @@
   @media (min-width: bootstrap.$tablet-width) {
     grid-column: span 2;
   }
-}
 
-.advantages__photo img {
-  height: 260px;
+  img {
+    height: 260px;
 
-  @media (min-width: bootstrap.$tablet-width) {
-    height: 256px;
+    @media (min-width: bootstrap.$tablet-width) {
+      height: 256px;
+    }
   }
 }
-
