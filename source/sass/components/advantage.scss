@@ -14,8 +14,7 @@
   }
 
   &--primary {
-    padding-top: 37px;
-    padding-bottom: 37px;
+    padding: 37px 18px;
     background-color: bootstrap.$primary-color;
     color: bootstrap.$primary-text;
   }
@@ -49,11 +48,11 @@
     }
   }
 
-  &--secondary {
+  &--has-border {
     @media (max-width: bootstrap.$mobile-width-only) {
       position: relative;
 
-      &:not(:last-child)::after {
+      &::after {
         position: absolute;
         bottom: 0;
         left: 18px;
@@ -67,8 +66,7 @@
 }
 
 .advantage__title {
-  margin-top: 0;
-  margin-bottom: 11px;
+  margin: 0 0 11px 0;
   color: bootstrap.$accent-text;
 
   &--primary {

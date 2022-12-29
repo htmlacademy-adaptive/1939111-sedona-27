@@ -1,34 +1,28 @@
 @use "../global/bootstrap.scss";
 
 .video-gallery {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0 200px;
   }
 }
 
 .video-gallery__text-block {
   max-width: 445px;
   margin: 0 auto;
-  padding-top: 17px;
-  padding-bottom: 38px;
+  padding: 17px 0 38px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding-top: 58px;
-    padding-bottom: 66px;
+    padding: 58px 0 66px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding-top: 62px;
-    padding-bottom: 64px;
+    padding: 62px 0 64px;
   }
 }
 

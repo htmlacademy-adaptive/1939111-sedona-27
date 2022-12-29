@@ -7,6 +7,18 @@
   min-height: 46px;
   padding-left: 62px;
   cursor: pointer;
+
+  &:hover .control__mark {
+    background-color: #e5e5e5;
+  }
+
+  &:active .control__mark {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .control__label {
@@ -50,16 +62,4 @@
   height: 16px;
   background-image: url("../../img/icons/tick.svg");
   background-repeat: no-repeat;
-}
-
-.control:hover .control__mark {
-  background-color: #e5e5e5;
-}
-
-.control:active .control__mark {
-  background-color: #d5d5d5;
-}
-
-.control:active .control__mark::before {
-  opacity: 0.3;
 }
