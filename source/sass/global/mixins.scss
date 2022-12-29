@@ -1,4 +1,4 @@
-.visually-hidden {
+@mixin visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -11,4 +11,8 @@
   overflow: hidden;
 }
 
-/*# sourceMappingURL=visually-hidden.css.map */
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

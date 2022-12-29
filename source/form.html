@@ -71,17 +71,21 @@
           <legend class="field-group__legend">Контактная информация:</legend>
           <label class="form__label">
             Контактный телефон*:
-            <input class="form__input form__input--has-icon form__input--phone" type="text" placeholder="Введите телефон" required>
+            <div class="form__input-wrapper form__input-wrapper--phone">
+              <input class="form__input form__input--has-icon" type="text" placeholder="Введите телефон" required>
+            </div>
           </label>
           <label class="form__label">
             Электронная почта*:
-            <input class="form__input form__input--has-icon form__input--mail" type="text" placeholder="Введите e-mail" required>
+            <div class="form__input-wrapper form__input-wrapper--mail">
+              <input class="form__input form__input--has-icon" type="text" placeholder="Введите e-mail" required>
+            </div>
           </label>
         </fieldset>
 
         <fieldset class="field-group field-group--wide">
           <legend class="field-group__legend">Ваше общее впечатление:</legend>
-          <ul class="form__list form-list">
+          <ul class="form__list form-list form-list--impression">
             <li class="form-list__item">
               <label class="form-list__control control">
                 <input class="control__input visually-hidden" type="radio" name="impression" value="good" checked>
@@ -132,7 +136,7 @@
             </li>
             <li class="form-list__item">
               <label class="form-list__control control">
-                <input class="form-list__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
+                <input class="control__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
                 <span class="control__mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>
@@ -144,13 +148,14 @@
           <legend class="field-group__legend">Опишите свои эмоции:</legend>
           <label class="form__label">
             <span class="visually-hidden">Опишите свои эмоции:</span>
-            <textarea class="form__input" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__input form__input--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
 
-        <button class="feedback-form__button button" type="button">Отправить отзыв</button>
-
-        <p class="form__legend">* — обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="form__button button" type="button">Отправить отзыв</button>
+          <p class="form__legend">* — обязательные поля</p>
+        </div>
       </form>
     </main>
 

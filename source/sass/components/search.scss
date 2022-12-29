@@ -1,18 +1,41 @@
 @use "../global/bootstrap.scss";
 
 .search {
+  max-width: 458px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
   text-align: center;
-  background-color: bootstrap.$bg-color;
 }
 
-.search__button {
-  padding: 0 18px;
+.search__text-block {
+  padding-top: 38px;
+  padding-bottom: 32px;
 
   @media (min-width: bootstrap.$tablet-width) {
-      padding: 0 33px;
+    padding-top: 61px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-      padding: 0 55px;
+    padding-bottom: 45px;
+  }
+}
+
+.search__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 49px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 58px;
+    padding-top: 14.5px;
+    padding-bottom: 17.5px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 66px;
   }
 }

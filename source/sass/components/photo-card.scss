@@ -1,7 +1,86 @@
 @use "../global/bootstrap.scss";
 
+.photo-card {
+  position: relative;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-top: 1px solid #e5e5e5;
+
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+}
+
+.photo-card__image {
+  margin-bottom: 15px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photo-card__description {
+  @media (min-width: bootstrap.$tablet-width) {
+    display: grid;
+    grid-template-areas: "title like"
+      "author like";
+    grid-template-columns: 1fr 20%;
+    grid-column-gap: 15px;
+    box-sizing: border-box;
+    padding: 22px 20px 15px 20px;
+    background-color: #f2f2f2;
+
+    &--accent {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo-card:first-child .photo-card__description {
+  @media (min-width: bootstrap.$desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .photo-card__title {
+  grid-area: title;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 700;
   color: bootstrap.$accent-text;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.photo-card__author {
+  grid-area: author;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.photo-card__likes {
+  grid-area: like;
+  justify-content: end;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    justify-content: start;
+  }
 }
