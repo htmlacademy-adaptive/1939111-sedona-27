@@ -13,10 +13,18 @@
 }
 
 .photo-card__image {
+  height: 280px;
   margin-bottom: 15px;
 
   @media (min-width: bootstrap.$tablet-width) {
+    height: 267px;
     margin-bottom: 0;
+  }
+
+  &--first {
+    @media (min-width: bootstrap.$tablet-width) {
+      height: 400px;
+    }
   }
 }
 

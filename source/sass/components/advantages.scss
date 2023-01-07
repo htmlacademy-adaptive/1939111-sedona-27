@@ -26,14 +26,6 @@
   }
 }
 
-.advantages__item {
-  &:first-of-type {
-    @media (max-width: bootstrap.$mobile-width-only) {
-      padding-top: 54px;
-    }
-  }
-}
-
 .advantages__list {
   @include bootstrap.list-reset;
 

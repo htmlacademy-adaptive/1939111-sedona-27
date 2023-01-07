@@ -26,18 +26,11 @@
   &:first-child {
     @media (min-width: bootstrap.$tablet-width) {
       grid-column: 1 / 3;
+      grid-template-rows: 400px auto;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
       grid-column: 1 / 4;
     }
-  }
-}
-
-.gallery__item img {
-  height: 280px;
-
-  @media (min-width: bootstrap.$tablet-width) {
-    height: 267px;
   }
 }

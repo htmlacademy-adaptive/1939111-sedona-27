@@ -1,3 +1,5 @@
+@use "../global/bootstrap.scss";
+
 .video {
   position: relative;
 }
@@ -19,5 +21,22 @@
 .video__container {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 177px;
+  background-image: url("../../img/gallery/video.jpg");
+  background-image: -webkit-image-set(url("../../img/gallery/video.jpg") 1x,
+    url("../../img/gallery/video@2x.jpg") 2x);
+  background-image: image-set(url("../../img/gallery/video.jpg") 1x,
+    url("../../img/gallery/video@2x.jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    height: 500px;
+    background-image: url("../../img/gallery/video-desktop.jpg");
+    background-image: -webkit-image-set(url("../../img/gallery/video-desktop.jpg") 1x,
+      url("../../img/gallery/video-desktop@2x.jpg") 2x);
+    background-image: image-set(url("../../img/gallery/video-desktop.jpg") 1x,
+      url("../../img/gallery/video-desktop@2x.jpg") 2x);
+  }
 }

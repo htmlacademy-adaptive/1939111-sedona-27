@@ -20,8 +20,20 @@
   }
 
   &--has-icon {
+    position: relative;
     padding: 8px 18px 0 65px;
     background: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 18px;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
     @media (max-width: bootstrap.$mobile-width-only) {
       text-align: left;
@@ -45,6 +57,32 @@
 
     @media (min-width: bootstrap.$tablet-width) {
       padding: 156px 32px 61px;
+
+      &::before {
+        width: 80px;
+        height: 75px;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &--house {
+    &::before {
+      background-image: url("../../img/advantages/icon-house.svg");
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../../img/advantages/icon-food.svg");
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      background-image: url("../../img/advantages/icon-souvenirs.svg");
     }
   }
 
@@ -61,6 +99,12 @@
         height: 1px;
         background-color: #d6d6d6;
       }
+    }
+  }
+
+  &--first {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      padding-top: 54px;
     }
   }
 }

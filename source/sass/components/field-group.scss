@@ -1,23 +1,94 @@
 @use "../global/bootstrap.scss";
 
 .field-group {
+  position: relative;
   margin: 0;
   padding: 24px 0;
   border: none;
-  border-top: 1px solid #e5e5e5;
 
   &--wide {
     @media (min-width: bootstrap.$tablet-width) {
       grid-column: 1 / 3;
+      border-top: 1px solid #dbdbdb;
+    }
+  }
+
+  &--general {
+    position: relative;
+    padding-bottom: 39px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 0 0 15px 0;
+      margin-bottom: 48px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: -43px;
+        height: 100%;
+        width: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 56px;
+
+      &::after {
+        right: -63px;
+      }
+    }
+  }
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    &--contacts {
+      padding-bottom: 34px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &:last-of-type::after {
+      display: none;
+    }
+
+    &:first-of-type::before {
+      position: absolute;
+      content: "";
+      top: -50px;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #e5e5e5;
     }
   }
 }
 
 .field-group__legend {
+  display: block;
+  padding: 24px 0 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   color: bootstrap.$accent-text;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0;
+  }
+
+  &--wide {
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 0 63px;
+    }
+  }
 }

@@ -27,6 +27,10 @@
   line-height: 21px;
   text-transform: uppercase;
   opacity: 0.6;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    opacity: 1;
+  }
 }
 
 .form__label {
@@ -34,6 +38,10 @@
   flex-direction: column;
   margin-bottom: 16px;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__input-wrapper {
@@ -115,4 +123,8 @@
 .form__button {
   width: 100%;
   padding: 16px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 64px;
+  }
 }

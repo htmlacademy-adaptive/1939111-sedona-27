@@ -3,4 +3,36 @@
 .social {
   @include bootstrap.list-reset;
   display: flex;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    margin-bottom: 40px;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: bootstrap.$primary-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: bootstrap.$primary-hover;
+  }
+
+  &:active {
+    background-color: bootstrap.$primary-active;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }

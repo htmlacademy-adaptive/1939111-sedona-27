@@ -24,4 +24,8 @@
   line-height: 26px;
   text-transform: uppercase;
   color: bootstrap.$accent-text;
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    margin-bottom: 33px;
+  }
 }
