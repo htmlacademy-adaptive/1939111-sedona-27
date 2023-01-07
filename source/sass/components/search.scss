@@ -3,22 +3,19 @@
 .search {
   max-width: 458px;
   margin: 0 auto;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 0 18px;
   text-align: center;
 }
 
 .search__text-block {
-  padding-top: 38px;
-  padding-bottom: 32px;
+  padding: 38px 0 32px;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding-top: 61px;
-    padding-bottom: 40px;
+    padding: 61px 0 40px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding-bottom: 45px;
+    padding: 61px 0 45px;
   }
 }
 
@@ -26,13 +23,11 @@
   display: block;
   width: 100%;
   margin-bottom: 49px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 0;
 
   @media (min-width: bootstrap.$tablet-width) {
     margin-bottom: 58px;
-    padding-top: 14.5px;
-    padding-bottom: 17.5px;
+    padding: 14px 0 17px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {

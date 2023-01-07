@@ -4,11 +4,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 90px 0 85px 0;
+  padding: 52px 0 67px 0;
   background-color: bootstrap.$primary-color;
-  background-image: url("../../img/welcome/welcome-background.jpg");
+  background-image: url("../../img/welcome/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 902px 389px;
+  background-position: center bottom;
 
   &::after {
     position: absolute;
@@ -23,8 +24,52 @@
     background-position: center;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/welcome/back-desktop@2x.jpg");
+  }
+
   @media (min-width: bootstrap.$tablet-width) {
-    padding: 77.5px 0 90.5px 0;
+    padding: 95px 0 117px 0;
+    background-size: 1200px 518px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 103px 0 123px 0;
+  }
+
+  &--index {
+    padding: 90px 0 85px 0;
+    background-position: 50%;
+
+    @media (max-width: bootstrap.$mobile-width-only) {
+      background-image: url("../../img/welcome/back-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/welcome/back-mobile@2x.jpg");
+      }
+    }
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 77px 0 90px 0;
+    }
+  }
+}
+
+.intro__slogan {
+  height: auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 456px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 459px;
+  }
+
+  &--index {
+    @media (min-width: bootstrap.$tablet-width) {
+      width: 460px;
+    }
   }
 }
 
@@ -34,8 +79,7 @@
   margin: 0 auto;
 
   @media (min-width: bootstrap.$tablet-width) {
-    padding-right: 33px;
-    padding-left: 33px;
+    padding: 47px 33px 55px;
 
     br {
       display: none;
@@ -43,7 +87,30 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding-right: 55px;
-    padding-left: 55px;
+    padding: 59px 55px 44px;
+  }
+
+  &--form {
+    padding: 36px 18px 28px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 64px 33px 102px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 115px 55px 67px;
+    }
+  }
+
+  &--catalog {
+    padding: 37px 18px 25px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 66px 33px 67px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 100px 55px 65px;
+    }
   }
 }

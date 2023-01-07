@@ -2,31 +2,35 @@
 
 .form {
   display: grid;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   background-color: bootstrap.$bg-color;
 
   @media (min-width: bootstrap.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 88px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
     grid-column-gap: 128px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 0 120px;
   }
 }
 
 .form__legend {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   margin: 0;
   text-align: right;
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
   opacity: 0.6;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    opacity: 1;
+  }
 }
 
 .form__label {
@@ -34,6 +38,10 @@
   flex-direction: column;
   margin-bottom: 16px;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__input-wrapper {
@@ -82,8 +90,7 @@
   &--textarea {
     height: 150px;
     max-width: 768px;
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 auto 32px auto;
     resize: none;
 
     @media (min-width: bootstrap.$tablet-width) {
@@ -115,12 +122,9 @@
 
 .form__button {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
+  padding: 16px;
 
-.form__legend {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 64px;
+  }
 }
