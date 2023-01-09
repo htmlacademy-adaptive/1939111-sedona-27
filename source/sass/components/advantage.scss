@@ -24,15 +24,10 @@
     padding: 8px 18px 0 65px;
     background: none;
 
-    &::before {
+    .advantage__icon {
       position: absolute;
-      content: "";
       top: 0;
       left: 18px;
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     @media (max-width: bootstrap.$mobile-width-only) {
@@ -58,31 +53,13 @@
     @media (min-width: bootstrap.$tablet-width) {
       padding: 156px 32px 61px;
 
-      &::before {
+      .advantage__icon {
         width: 80px;
         height: 75px;
         top: 60px;
         left: 50%;
         transform: translateX(-50%);
       }
-    }
-  }
-
-  &--house {
-    &::before {
-      background-image: url("../../img/advantages/icon-house.svg");
-    }
-  }
-
-  &--food {
-    &::before {
-      background-image: url("../../img/advantages/icon-food.svg");
-    }
-  }
-
-  &--souvenirs {
-    &::before {
-      background-image: url("../../img/advantages/icon-souvenirs.svg");
     }
   }
 
