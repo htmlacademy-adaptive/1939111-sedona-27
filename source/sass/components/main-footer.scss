@@ -3,7 +3,7 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding: 28px 18px 22px 18px;
+  padding: 38px 18px 22px 18px;
   align-items: center;
   background-color: bootstrap.$bg-color;
 
@@ -14,7 +14,19 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 36px 136px;
+    padding: 38px 120px;
+  }
+
+  &--catalog {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      padding-top: 28px;
+    }
+  }
+
+  &--form {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      padding-top: 55px;
+    }
   }
 }
 

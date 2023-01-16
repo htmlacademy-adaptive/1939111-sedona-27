@@ -3,13 +3,27 @@
 .field-group {
   position: relative;
   margin: 0;
-  padding: 24px 0;
+  padding: 24px 0 25px;
   border: none;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0;
+  }
 
   &--wide {
     @media (min-width: bootstrap.$tablet-width) {
       grid-column: 1 / 3;
       border-top: 1px solid #dbdbdb;
+    }
+  }
+
+  &--impression {
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-top: 46px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-top: 56px;
     }
   }
 
@@ -19,22 +33,19 @@
 
     @media (min-width: bootstrap.$tablet-width) {
       padding: 0 0 15px 0;
-      margin-bottom: 48px;
 
       &::after {
         position: absolute;
         content: "";
-        top: 0;
+        top: -55px;
         right: -43px;
-        height: 100%;
+        height: calc(100% + 54px);
         width: 1px;
         background-color: #dbdbdb;
       }
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      margin-bottom: 56px;
-
       &::after {
         right: -63px;
       }
@@ -49,7 +60,7 @@
     &::after {
       position: absolute;
       content: "";
-      bottom: 0;
+      bottom: -2px;
       left: -20px;
       width: 100vw;
       height: 1px;
@@ -63,7 +74,7 @@
     &:first-of-type::before {
       position: absolute;
       content: "";
-      top: -50px;
+      top: -47px;
       left: -20px;
       width: 100vw;
       height: 1px;
@@ -74,21 +85,33 @@
 
 .field-group__legend {
   display: block;
-  padding: 24px 0 0;
+  padding: 25px 0 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   color: bootstrap.$accent-text;
+  margin-bottom: -5px;
 
   @media (min-width: bootstrap.$tablet-width) {
     padding: 0;
+    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   &--wide {
     @media (min-width: bootstrap.$tablet-width) {
       padding: 0 63px;
     }
+  }
+
+  &--general {
+    margin-left: 20px;
+  }
+
+  &--contacts {
+    margin-left: -20px;
   }
 }
