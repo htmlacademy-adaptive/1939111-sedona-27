@@ -49,3 +49,21 @@
     }
   }
 }
+
+.advantages__item {
+  @media (min-width: bootstrap.$tablet-width) {
+    order: 1;
+  }
+
+  &--bridge {
+    @media (min-width: bootstrap.$tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--other {
+    @media (min-width: bootstrap.$tablet-width) {
+      order: 3;
+    }
+  }
+}

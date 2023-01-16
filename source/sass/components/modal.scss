@@ -1,0 +1,112 @@
+@use "../global/bootstrap.scss";
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 640px;
+  }
+
+  &--error {
+    max-width: 400px;
+  }
+}
+
+.modal__description {
+  padding: 39px 39px 30px 37px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 53px 110px 30px 110px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 51px 110px 28px 110px;
+  }
+
+  &--error {
+    padding: 45px 42px 28px 41px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 50px 47px 25px 46px;
+    }
+  }
+}
+
+.modal__title {
+  margin: 0 0 27px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin: 0 0 25px 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  &--error {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: bootstrap.$tablet-width) {
+      line-height: 40px;
+    }
+  }
+}
+
+.modal__text {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__button-wrapper {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.modal__button {
+  display: block;
+  width: 100%;
+  padding: 18px 0 14px 0;
+
+  &--error {
+    width: auto;
+    padding: 18px 74px 14px 73px;
+    margin: 0 auto 35px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      margin: 0 auto 49px;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 24px 18px 25px 18px;
+  padding: 25px 22px;
   background-color: bootstrap.$secondary-color;
   text-transform: uppercase;
 
@@ -13,10 +13,24 @@
     padding: 52px 33px;
   }
 
+  @media (min-width: bootstrap.$desktop-width) {
+    padding: 65px 55px 38px;
+  }
+
   &--primary {
-    padding: 37px 18px;
+    padding: 40px 29px;
     background-color: bootstrap.$primary-color;
     color: bootstrap.$primary-text;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      justify-content: space-between;
+      padding: 53px 33px 31px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      justify-content: space-between;
+      padding: 53px 55px 51px;
+    }
   }
 
   &--has-icon {
@@ -56,10 +70,14 @@
       .advantage__icon {
         width: 80px;
         height: 75px;
-        top: 60px;
+        top: 58px;
         left: 50%;
         transform: translateX(-50%);
       }
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 168px 55px 71px;
     }
   }
 
@@ -79,9 +97,20 @@
     }
   }
 
+  &--road {
+    @media (min-width: bootstrap.$tablet-width) {
+      justify-content: space-between;
+      padding: 41px 33px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding: 50px 33px;
+    }
+  }
+
   &--first {
     @media (max-width: bootstrap.$mobile-width-only) {
-      padding-top: 54px;
+      padding-top: 73px;
     }
   }
 }
@@ -89,6 +118,8 @@
 .advantage__title {
   margin: 0 0 11px 0;
   color: bootstrap.$accent-text;
+  font-size: 18px;
+  line-height: 26px;
 
   &--primary {
     color: bootstrap.$primary-text;
@@ -96,9 +127,63 @@
 
   &--has-icon {
     margin-bottom: 16px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (max-width: bootstrap.$mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &--road {
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-bottom: 13px;
+    }
   }
 }
 
 .advantage__number {
   margin-bottom: 17px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  &--primary {
+    margin-bottom: 13px;
+  }
+}
+
+.advantage__description {
+  br {
+    @media (min-width: bootstrap.$tablet-width) {
+      display: none;
+    }
+  }
+
+  &--has-icon,
+  &--road {
+    br {
+      @media (min-width: bootstrap.$tablet-width) {
+        display: inline;
+      }
+    }
+  }
+
+  // &--primary {
+  //   br {
+  //     @media (min-width: bootstrap.$desktop-width) {
+  //       display: inline;
+  //     }
+  //   }
+  // }
 }
