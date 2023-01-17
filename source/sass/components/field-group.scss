@@ -19,7 +19,7 @@
 
   &--impression {
     @media (min-width: bootstrap.$tablet-width) {
-      margin-top: 46px;
+      margin-top: 48px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -52,11 +52,17 @@
     }
   }
 
-  @media (max-width: bootstrap.$mobile-width-only) {
-    &--contacts {
+  &--contacts {
+    @media (max-width: bootstrap.$mobile-width-only) {
       padding-bottom: 34px;
     }
 
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-left: 29px;
+    }
+  }
+
+  @media (max-width: bootstrap.$mobile-width-only) {
     &::after {
       position: absolute;
       content: "";
@@ -98,20 +104,51 @@
     padding: 0;
     margin-bottom: 28px;
     font-size: 21px;
-    line-height: 26px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 29px;
   }
 
   &--wide {
     @media (min-width: bootstrap.$tablet-width) {
       padding: 0 63px;
     }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 48px;
+    }
   }
 
   &--general {
-    margin-left: 20px;
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-left: 20px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-left: 32px;
+    }
   }
 
   &--contacts {
-    margin-left: -20px;
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-left: -20px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-left: -32px;
+    }
+  }
+
+  &--attractions {
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 59px;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 28px;
+    }
   }
 }
