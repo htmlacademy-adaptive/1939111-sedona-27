@@ -12,7 +12,7 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    grid-column-gap: 128px;
+    grid-column-gap: 98px;
     padding: 0 120px;
   }
 }
@@ -97,10 +97,11 @@
   &--textarea {
     height: 150px;
     max-width: 768px;
-    margin: 0 auto 47px auto;
+    margin: 0 auto 35px auto;
     resize: none;
 
     @media (min-width: bootstrap.$tablet-width) {
+      margin: 0 auto 47px auto;
       height: 160px;
     }
   }

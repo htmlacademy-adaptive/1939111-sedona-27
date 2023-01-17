@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 25px 22px;
+  padding: 25px 18px;
   background-color: bootstrap.$secondary-color;
   text-transform: uppercase;
 
@@ -18,9 +18,13 @@
   }
 
   &--primary {
-    padding: 40px 29px;
+    padding: 40px 27px;
     background-color: bootstrap.$primary-color;
     color: bootstrap.$primary-text;
+
+    // br {
+    //   display: none;
+    // }
 
     @media (min-width: bootstrap.$tablet-width) {
       justify-content: space-between;
@@ -30,6 +34,10 @@
     @media (min-width: bootstrap.$desktop-width) {
       justify-content: space-between;
       padding: 53px 55px 51px;
+
+      // br {
+      //   display: inline;
+      // }
     }
   }
 
@@ -70,7 +78,7 @@
       .advantage__icon {
         width: 80px;
         height: 75px;
-        top: 58px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -112,6 +120,18 @@
     @media (max-width: bootstrap.$mobile-width-only) {
       padding-top: 73px;
     }
+
+    // @media (min-width: bootstrap.$tablet-width) {
+    //   br {
+    //     display: none;
+    //   }
+    // }
+
+    // @media (min-width: bootstrap.$desktop-width) {
+    //   br {
+    //     display: inline;
+    //   }
+    // }
   }
 }
 
@@ -165,25 +185,72 @@
 
 .advantage__description {
   br {
+    display: inline;
+
     @media (min-width: bootstrap.$tablet-width) {
       display: none;
     }
   }
 
-  &--has-icon,
-  &--road {
+  &--has-icon {
     br {
+      display: none;
+
       @media (min-width: bootstrap.$tablet-width) {
         display: inline;
       }
     }
   }
 
-  // &--primary {
-  //   br {
-  //     @media (min-width: bootstrap.$desktop-width) {
-  //       display: inline;
-  //     }
-  //   }
-  // }
+  &--primary {
+    br {
+      display: none;
+
+      @media (min-width: bootstrap.$desktop-width) {
+        display: inline;
+      }
+    }
+  }
+
+  &--first {
+    br {
+      display: inline;
+
+      @media (min-width: bootstrap.$tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: bootstrap.$desktop-width) {
+        display: inline;
+      }
+    }
+  }
+
+  &--road {
+    padding: 0 14px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      padding: 0;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: bootstrap.$tablet-width) {
+        display: inline;
+      }
+
+      @media (min-width: bootstrap.$desktop-width) {
+        display: none;
+      }
+    }
+
+    span {
+      display: none;
+
+      @media (min-width: bootstrap.$desktop-width) {
+        display: block;
+      }
+    }
+  }
 }
