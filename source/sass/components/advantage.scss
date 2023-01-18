@@ -22,10 +22,6 @@
     background-color: bootstrap.$primary-color;
     color: bootstrap.$primary-text;
 
-    // br {
-    //   display: none;
-    // }
-
     @media (min-width: bootstrap.$tablet-width) {
       justify-content: space-between;
       padding: 53px 33px 31px;
@@ -34,10 +30,6 @@
     @media (min-width: bootstrap.$desktop-width) {
       justify-content: space-between;
       padding: 53px 55px 51px;
-
-      // br {
-      //   display: inline;
-      // }
     }
   }
 
@@ -45,12 +37,6 @@
     position: relative;
     padding: 8px 18px 0 65px;
     background: none;
-
-    .advantage__icon {
-      position: absolute;
-      top: 0;
-      left: 18px;
-    }
 
     @media (max-width: bootstrap.$mobile-width-only) {
       text-align: left;
@@ -74,14 +60,6 @@
 
     @media (min-width: bootstrap.$tablet-width) {
       padding: 156px 32px 61px;
-
-      .advantage__icon {
-        width: 80px;
-        height: 75px;
-        top: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
     }
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -120,18 +98,35 @@
     @media (max-width: bootstrap.$mobile-width-only) {
       padding-top: 73px;
     }
+  }
+}
 
-    // @media (min-width: bootstrap.$tablet-width) {
-    //   br {
-    //     display: none;
-    //   }
-    // }
+.advantage__icon {
+  position: absolute;
+  top: 0;
+  left: 18px;
 
-    // @media (min-width: bootstrap.$desktop-width) {
-    //   br {
-    //     display: inline;
-    //   }
-    // }
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 80px;
+    height: 75px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    top: 70px;
+  }
+
+  &--souvenirs {
+    @media (min-width: bootstrap.$tablet-width) {
+      top: 63px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      width: 100px;
+      height: 85px;
+    }
   }
 }
 

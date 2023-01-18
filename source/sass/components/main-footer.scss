@@ -21,6 +21,10 @@
     @media (max-width: bootstrap.$mobile-width-only) {
       padding-top: 28px;
     }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      padding-top: 33px;
+    }
   }
 
   &--form {
