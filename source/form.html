@@ -50,7 +50,7 @@
           </div>
           <div class="intro__text-block intro__text-block--form text-block">
             <div class="text-block__title text-block__title--form">Оставьте свой отзыв</div>
-            <div class="text-block__description text-block__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br>а также о посещенных вами достопримечательностях</div>
+            <div class="text-block__description text-block__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,&nbsp;<br>а также о посещенных вами достопримечательностях</div>
           </div>
         </div>
       </section>
@@ -74,18 +74,18 @@
 
         <fieldset class="field-group field-group--contacts">
           <legend class="field-group__legend field-group__legend--contacts">Контактная информация:</legend>
-          <label class="form__label">
+          <label class="form__label form__label--contacts" for="phone">
             <span class="form__label-text">Контактный телефон*:</span>
-            <div class="form__input-wrapper form__input-wrapper--phone">
-              <input class="form__input form__input--has-icon" type="text" placeholder="Введите телефон" required>
-            </div>
           </label>
-          <label class="form__label">
+          <div class="form__input-wrapper form__input-wrapper--has-icon form__input-wrapper--phone">
+            <input class="form__input form__input--has-icon" id="phone" type="text" placeholder="Введите телефон" required>
+          </div>
+          <label class="form__label form__label--contacts" for="mail">
             <span class="form__label-text">Электронная почта*:</span>
-            <div class="form__input-wrapper form__input-wrapper--mail">
-              <input class="form__input form__input--has-icon" type="text" placeholder="Введите e-mail" required>
-            </div>
           </label>
+          <div class="form__input-wrapper form__input-wrapper--has-icon form__input-wrapper--mail">
+            <input class="form__input form__input--has-icon" id="mail" type="text" placeholder="Введите e-mail" required>
+          </div>
         </fieldset>
 
         <fieldset class="field-group field-group--wide field-group--impression">
@@ -116,7 +116,7 @@
 
         </fieldset>
         <fieldset class="field-group field-group--wide field-group--attractions">
-          <legend class="field-group__legend field-group__legend--wide field-group__legend--attractions">Посещенные <br>достопримечательности:</legend>
+          <legend class="field-group__legend field-group__legend--wide field-group__legend--attractions">Посещенные&nbsp;<br>достопримечательности:</legend>
           <ul class="form__list form-list form-list--attractions">
             <li class="form-list__item">
               <label class="form-list__control control">
@@ -213,7 +213,7 @@
     <div class="modal-container modal-container--error modal-container--close">
       <div class="modal modal--error">
         <div class="modal__description modal__description--error">
-          <h2 class="modal__title modal__title--error">Что-то пошло <br>не так!</h2>
+          <h2 class="modal__title modal__title--error">Что-то пошло&nbsp;<br>не так!</h2>
           <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <button class="modal__button modal__button--error button" type="button">OK</button>

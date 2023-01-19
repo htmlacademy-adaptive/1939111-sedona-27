@@ -59,11 +59,6 @@
   padding: 8px 18px 0 65px;
   background: none;
 }
-.advantage--has-icon .advantage__icon {
-  position: absolute;
-  top: 0;
-  left: 18px;
-}
 @media (max-width: 767px) {
   .advantage--has-icon {
     text-align: left;
@@ -84,13 +79,6 @@
 @media (min-width: 768px) {
   .advantage--has-icon {
     padding: 156px 32px 61px;
-  }
-  .advantage--has-icon .advantage__icon {
-    width: 80px;
-    height: 75px;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 @media (min-width: 1200px) {
@@ -126,6 +114,37 @@
 @media (max-width: 767px) {
   .advantage--first {
     padding-top: 73px;
+  }
+}
+
+.advantage__icon {
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+@media (min-width: 768px) {
+  .advantage__icon {
+    width: 80px;
+    height: 75px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 1200px) {
+  .advantage__icon {
+    top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .advantage__icon--souvenirs {
+    top: 63px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantage__icon--souvenirs {
+    width: 100px;
+    height: 85px;
   }
 }
 
@@ -393,7 +412,9 @@
 }
 
 .copyright {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 27px;
+  grid-column-gap: 12px;
   align-items: center;
   text-decoration: none;
 }
@@ -416,7 +437,6 @@
 }
 
 .copyright__text {
-  margin-right: 12px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -473,7 +493,7 @@
 }
 @media (max-width: 767px) {
   .field-group--contacts {
-    padding-bottom: 34px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -616,6 +636,9 @@
 .form__label:last-child {
   margin-bottom: 0;
 }
+.form__label--contacts {
+  margin-bottom: 0;
+}
 
 .form__label-text {
   padding-left: 16px;
@@ -634,6 +657,9 @@
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;
+}
+.form__input-wrapper--has-icon {
+  margin-bottom: 16px;
 }
 .form__input-wrapper--phone::before {
   background-image: url("../../img/phone.svg");
@@ -832,7 +858,7 @@
 }
 @media (min-width: 1200px) {
   .intro__slogan-wrapper {
-    padding: 103px 0 123px 0;
+    padding: 98px 0 123px 0;
   }
 }
 .intro__slogan-wrapper--index {
@@ -886,7 +912,7 @@
 }
 @media (min-width: 1200px) {
   .intro__text-block {
-    padding: 59px 55px 44px;
+    padding: 62px 55px 44px;
   }
 }
 .intro__text-block--form {
@@ -899,20 +925,20 @@
 }
 @media (min-width: 1200px) {
   .intro__text-block--form {
-    padding: 115px 55px 70px;
+    padding: 115px 55px 67px;
   }
 }
 .intro__text-block--catalog {
-  padding: 37px 18px;
+  padding: 34px 18px;
 }
 @media (min-width: 768px) {
   .intro__text-block--catalog {
-    padding: 66px 33px 81px;
+    padding: 66px 33px 75px;
   }
 }
 @media (min-width: 1200px) {
   .intro__text-block--catalog {
-    padding: 95px 55px 87px;
+    padding: 98px 55px 88px;
   }
 }
 
@@ -983,6 +1009,11 @@
 @media (max-width: 767px) {
   .main-footer--catalog {
     padding-top: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer--catalog {
+    padding-top: 33px;
   }
 }
 @media (max-width: 767px) {
@@ -1459,6 +1490,11 @@
     margin-top: 4px;
   }
 }
+@media (min-width: 1200px) {
+  .photo-card__likes {
+    margin-top: 9px;
+  }
+}
 
 .search {
   max-width: 458px;
@@ -1603,15 +1639,28 @@
 }
 
 .text-block__description {
-  line-height: 24px;
+  line-height: 23px;
+}
+@media (min-width: 1200px) {
+  .text-block__description {
+    line-height: 22px;
+  }
+}
+.text-block__description--index {
+  line-height: 21px;
+}
+.text-block__description--form {
+  line-height: 21px;
+}
+@media (min-width: 1200px) {
+  .text-block__description--form {
+    line-height: 24px;
+  }
 }
 @media (max-width: 767px) {
   .text-block__description br {
     display: none;
   }
-}
-.text-block__description--index, .text-block__description--form {
-  line-height: 21px;
 }
 
 .video {
@@ -1675,7 +1724,7 @@
 .video-gallery__text-block {
   max-width: 445px;
   margin: 0 auto;
-  padding: 17px 5px 38px;
+  padding: 17px 5px 31px;
 }
 @media (min-width: 768px) {
   .video-gallery__text-block {

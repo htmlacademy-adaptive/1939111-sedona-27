@@ -34,7 +34,7 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 103px 0 123px 0;
+    padding: 98px 0 123px 0;
   }
 
   &--index {
@@ -83,7 +83,7 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 59px 55px 44px;
+    padding: 62px 55px 44px;
   }
 
   &--form {
@@ -94,19 +94,19 @@
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      padding: 115px 55px 70px;
+      padding: 115px 55px 67px;
     }
   }
 
   &--catalog {
-    padding: 37px 18px;
+    padding: 34px 18px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 66px 33px 81px;
+      padding: 66px 33px 75px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
-      padding: 95px 55px 87px;
+      padding: 98px 55px 88px;
     }
   }
 }

@@ -44,6 +44,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--contacts {
+    margin-bottom: 0;
+  }
 }
 
 .form__label-text {
@@ -63,6 +67,10 @@
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &--has-icon {
+    margin-bottom: 16px;
   }
 
   &--phone::before {

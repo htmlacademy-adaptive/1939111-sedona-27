@@ -1,7 +1,9 @@
 @use "../global/bootstrap.scss";
 
 .copyright {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 27px;
+  grid-column-gap: 12px;
   align-items: center;
   text-decoration: none;
 
@@ -33,7 +35,6 @@
 }
 
 .copyright__text {
-  margin-right: 12px;
   color: bootstrap.$accent-text;
   text-transform: uppercase;
 }

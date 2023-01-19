@@ -54,16 +54,27 @@
 }
 
 .text-block__description {
-  line-height: 24px;
+  line-height: 23px;
 
-  @media (max-width: bootstrap.$mobile-width-only) {
-    br {
-      display: none;
+  @media (min-width: bootstrap.$desktop-width) {
+    line-height: 22px;
+  }
+
+  &--index {
+    line-height: 21px;
+  }
+
+  &--form {
+    line-height: 21px;
+
+    @media (min-width: bootstrap.$desktop-width) {
+      line-height: 24px;
     }
   }
 
-  &--index,
-  &--form {
-    line-height: 21px;
+  br {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      display: none;
+    }
   }
 }

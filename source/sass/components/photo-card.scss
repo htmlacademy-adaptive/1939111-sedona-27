@@ -99,4 +99,8 @@
   @media (min-width: bootstrap.$tablet-width) {
     margin-top: 4px;
   }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-top: 9px;
+  }
 }
