@@ -21,8 +21,12 @@
     margin-bottom: 33px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      margin-bottom: 27px;
+      margin-bottom: 31px;
       font-size: 21px;
+    }
+
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 28px;
     }
 
     br {
@@ -51,14 +55,16 @@
       margin-bottom: 28px;
     }
   }
+
+  &--video {
+    @media (min-width: bootstrap.$desktop-width) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .text-block__description {
-  line-height: 23px;
-
-  @media (min-width: bootstrap.$desktop-width) {
-    line-height: 22px;
-  }
+  line-height: 22px;
 
   &--index {
     line-height: 21px;
@@ -66,6 +72,10 @@
 
   &--form {
     line-height: 21px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      line-height: 22px;
+    }
 
     @media (min-width: bootstrap.$desktop-width) {
       line-height: 24px;
