@@ -34,7 +34,7 @@
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    padding: 98px 0 123px 0;
+    padding: 102px 0 121px 0;
   }
 
   &--index {
@@ -75,7 +75,7 @@
 
 .intro__text-block {
   max-width: 484px;
-  padding: 34px 18px 13px;
+  padding: 34px 18px 17px;
   margin: 0 auto;
 
   @media (min-width: bootstrap.$tablet-width) {
@@ -90,7 +90,7 @@
     padding: 36px 18px 28px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 64px 33px 106px;
+      padding: 64px 33px 104px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {
@@ -102,7 +102,7 @@
     padding: 34px 18px;
 
     @media (min-width: bootstrap.$tablet-width) {
-      padding: 66px 33px 75px;
+      padding: 66px 33px 79px;
     }
 
     @media (min-width: bootstrap.$desktop-width) {

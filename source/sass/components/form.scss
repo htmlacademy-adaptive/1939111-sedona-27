@@ -64,6 +64,7 @@
     content: "";
     width: 58px;
     height: 58px;
+    margin: 0;
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +106,7 @@
   &--textarea {
     height: 150px;
     max-width: 768px;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 33px auto;
     resize: none;
 
     @media (min-width: bootstrap.$tablet-width) {
