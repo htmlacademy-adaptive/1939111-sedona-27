@@ -1,16 +1,16 @@
 @use "../global/bootstrap.scss";
 
 .map {
-  background-image: url('../../img/map/map-mobile.png');
+  background-image: url("../../img/map/map-mobile.png");
   background-size: cover;
   background-position: 50%;
 
   @media (min-width: bootstrap.$tablet-width) {
-    background-image: url('../../img/map/map-tablet.png');
+    background-image: url("../../img/map/map-tablet.png");
   }
 
   @media (min-width: bootstrap.$desktop-width) {
-    background-image: url('../../img/map/map-desktop.png');
+    background-image: url("../../img/map/map-desktop.png");
   }
 }
 
