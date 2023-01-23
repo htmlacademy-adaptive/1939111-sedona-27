@@ -33,4 +33,10 @@
   @media (min-width: bootstrap.$desktop-width) {
     margin-bottom: 66px;
   }
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #e5e5e5;
+  }
 }

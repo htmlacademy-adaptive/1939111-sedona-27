@@ -63,3 +63,8 @@
   background-image: url("../../img/tick.svg");
   background-repeat: no-repeat;
 }
+
+.control__input:disabled + .control__mark,
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
+}
