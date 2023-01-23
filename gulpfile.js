@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import csso from 'postcss-csso';
 import terser from 'gulp-terser';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
@@ -18,7 +19,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -37,6 +39,7 @@ const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 //Images
@@ -84,7 +87,7 @@ const copy = (done) => {
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'))
+  .pipe(gulp.dest('build'))
   done();
 }
 
@@ -116,7 +119,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build

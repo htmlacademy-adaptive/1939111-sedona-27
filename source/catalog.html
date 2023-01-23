@@ -10,6 +10,9 @@
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
 
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -59,15 +62,17 @@
         <h2 class="visually-hidden">Фото</h2>
         <ul class="gallery__list">
           <li class="gallery__item photo-card">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/spaces-desktop.webp 1x, img/gallery/spaces-desktop@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/gallery/spaces-desktop.jpg 1x, img/gallery/spaces-desktop@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/spaces-tablet.webp 1x, img/gallery/spaces-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/gallery/spaces-tablet.jpg 1x, img/gallery/spaces-tablet@2x.jpg 2x">
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/spaces.webp 1x, img/gallery/spaces@2x.webp 2x">
-              <img class="photo-card__image photo-card__image--first image"
-                src="img/gallery/spaces.jpg" srcset="img/gallery/spaces.jpg 1x, img/gallery/spaces@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
-            </picture>
+            <a class="photo-card__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/spaces-desktop.webp 1x, img/gallery/spaces-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery/spaces-desktop.jpg 1x, img/gallery/spaces-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/spaces-tablet.webp 1x, img/gallery/spaces-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery/spaces-tablet.jpg 1x, img/gallery/spaces-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/spaces.webp 1x, img/gallery/spaces@2x.webp 2x">
+                <img class="photo-card__image photo-card__image--first image"
+                  src="img/gallery/spaces.jpg" srcset="img/gallery/spaces.jpg 1x, img/gallery/spaces@2x.jpg 2x" alt="Неродные просторы" width="280" height="280">
+              </picture>
+            </a>
             <div class="photo-card__description">
               <h3 class="photo-card__title">Неродные просторы</h3>
               <div class="photo-card__author">Автор фото: Борис</div>
@@ -80,14 +85,16 @@
             </div>
           </li>
           <li class="gallery__item photo-card">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/greenery-desktop.webp 1x, img/gallery/greenery-desktop@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/gallery/greenery-desktop.jpg 1x, img/gallery/greenery-desktop@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/greenery-tablet.webp 1x, img/gallery/greenery-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/gallery/greenery-tablet.jpg 1x, img/gallery/greenery-tablet@2x.jpg 2x">
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/greenery.webp 1x, img/gallery/greenery@2x.webp 2x">
-              <img class="photo-card__image image" loading="lazy" src="img/gallery/greenery.jpg" srcset="img/gallery/greenery.jpg 1x, img/gallery/greenery@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
-            </picture>
+            <a class="photo-card__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/greenery-desktop.webp 1x, img/gallery/greenery-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery/greenery-desktop.jpg 1x, img/gallery/greenery-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/greenery-tablet.webp 1x, img/gallery/greenery-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery/greenery-tablet.jpg 1x, img/gallery/greenery-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/greenery.webp 1x, img/gallery/greenery@2x.webp 2x">
+                <img class="photo-card__image image" loading="lazy" src="img/gallery/greenery.jpg" srcset="img/gallery/greenery.jpg 1x, img/gallery/greenery@2x.jpg 2x" alt="Местная растительность" width="280" height="280">
+              </picture>
+            </a>
             <div class="photo-card__description">
               <h3 class="photo-card__title">Местная растительность</h3>
               <div class="photo-card__author">Автор фото: Сергей</div>
@@ -100,14 +107,16 @@
             </div>
           </li>
           <li class="gallery__item photo-card">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/road-desktop.webp 1x, img/gallery/road-desktop@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/gallery/road-desktop.jpg 1x, img/gallery/road-desktop@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/road-tablet.webp 1x, img/gallery/road-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/gallery/road-tablet.jpg 1x, img/gallery/road-tablet@2x.jpg 2x">
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/road.webp 1x, img/gallery/road@2x.webp 2x">
-              <img class="photo-card__image image" loading="lazy" src="img/gallery/road.jpg" srcset="img/gallery/road.jpg 1x, img/gallery/road@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
-            </picture>
+            <a class="photo-card__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/road-desktop.webp 1x, img/gallery/road-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery/road-desktop.jpg 1x, img/gallery/road-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/road-tablet.webp 1x, img/gallery/road-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery/road-tablet.jpg 1x, img/gallery/road-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/road.webp 1x, img/gallery/road@2x.webp 2x">
+                <img class="photo-card__image image" loading="lazy" src="img/gallery/road.jpg" srcset="img/gallery/road.jpg 1x, img/gallery/road@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+              </picture>
+            </a>
             <div class="photo-card__description photo-card__description--accent">
               <h3 class="photo-card__title">Дорога на север</h3>
               <div class="photo-card__author">Автор фото: Петр</div>
@@ -120,14 +129,16 @@
             </div>
           </li>
           <li class="gallery__item photo-card">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.webp 1x, img/gallery/bridge-desktop@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.jpg 1x, img/gallery/bridge-desktop@2x.jpg 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.webp 1x, img/gallery/bridge-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.jpg 1x, img/gallery/bridge-tablet@2x.jpg 2x">
-              <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/bridge.webp 1x, img/gallery/bridge@2x.webp 2x">
-              <img class="photo-card__image image" loading="lazy" src="img/gallery/bridge.jpg" srcset="img/gallery/bridge.jpg 1x, img/gallery/bridge@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
-            </picture>
+            <a class="photo-card__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.webp 1x, img/gallery/bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.jpg 1x, img/gallery/bridge-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.webp 1x, img/gallery/bridge-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.jpg 1x, img/gallery/bridge-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 320px)" srcset="img/gallery/bridge.webp 1x, img/gallery/bridge@2x.webp 2x">
+                <img class="photo-card__image image" loading="lazy" src="img/gallery/bridge.jpg" srcset="img/gallery/bridge.jpg 1x, img/gallery/bridge@2x.jpg 2x" alt="Мост дьявола" width="280" height="280">
+              </picture>
+            </a>
             <div class="photo-card__description">
               <h3 class="photo-card__title">Мост дьявола</h3>
               <div class="photo-card__author">Автор фото: Антон</div>
